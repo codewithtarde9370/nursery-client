@@ -1,4 +1,4 @@
-.plantcard-container{
+/* .plantcard-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,4 +12,45 @@
     font-size: 20px;
     color: blue;
 }
+ */
+/* PlantCard.css */
 
+.plantcard-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.plantcard-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plant-Name {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.plant-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+.plant-des {
+    padding: 15px;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
