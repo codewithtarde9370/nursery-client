@@ -3,6 +3,7 @@ import './Home.css';
 import PlantCard from '../../components/PlantCard/PlantCard';
 import axios from 'axios';
 import toast, {Toaster} from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 function Home() {
     //jab jab yaha data ayega turanta change will br reflected and display on the screen
@@ -10,9 +11,9 @@ function Home() {
     const [plantArray, setPlantArray] = useState([]);
 
     const loadPlant = async () => {
-        toast.loading("Loading Plants Details....")
-        const response = await axios.get("https://nursery-vd2g.onrender.com/plants")
-toast.dismiss()
+        toast.loading("Loading Plants Details....") 
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/plants`)
+        toast.dismiss()
 
         toast.success("Plants Loaded successfully!")
         setPlantArray(response.data.data)
@@ -25,7 +26,7 @@ toast.dismiss()
 
   return (
   <>
-  <h1>Plants View</h1>
+  <h1 className='heading'>Plants View</h1>
   <div className='plants-container'>
 
 {
@@ -50,6 +51,8 @@ toast.dismiss()
 }
 <Toaster/>
   </div>
+
+  <Link to="/Add"><button className='add-btn'>Add Plants</button></Link>
 
   </>)
 }

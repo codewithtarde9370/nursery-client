@@ -1,7 +1,41 @@
 .plants-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    text-align: center;
 }
 body{
     background-color: #b7bdbd;
+}/* Add this to your CSS file (e.g., Home.css or a separate CSS file) */
+
+.add-btn {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    
+    
+}
+
+.add-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.add-btn:active {
+    background-color: #1e7e34; /* Even darker green on active (click) */
+    transform: translateY(0); /* Remove lift effect on click */
+}
+
+.add-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); /* Custom focus outline */
 }

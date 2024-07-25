@@ -4,6 +4,7 @@ import './index.css';
 import Home from './views/Home/Home';
 import PlantView from './views/PlantView/Plant';
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
+import AddPlant from './views/Add/AddPlant';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router=createBrowserRouter([
@@ -14,6 +15,10 @@ const router=createBrowserRouter([
   {
     path: "/Plant",
     element: <PlantView/>
+  },
+  {
+    path: "/Add",
+    element: <AddPlant/>
   },
   {
     path: "*",
