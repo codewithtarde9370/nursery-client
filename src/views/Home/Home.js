@@ -46,7 +46,8 @@ function Home() {
             name={name}
              price={price}
              description={description}
-             image={image}/>
+             image={image}
+             loadPlant={loadPlant}/>
         })
 }
 <Toaster/>
