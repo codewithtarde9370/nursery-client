@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './views/Home/Home';
-import PlantView from './views/PlantView/Plant';
+import UpdatedPlant from './../src/views/UpdatedPlantView/UpdatedPlant'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
 import AddPlant from './views/Add/AddPlant';
 
@@ -13,8 +13,8 @@ const router=createBrowserRouter([
     element: <Home/>
   },
   {
-    path: "/Plant",
-    element: <PlantView/>
+    path: "/Update/:id",
+    element: <UpdatedPlant/>
   },
   {
     path: "/Add",

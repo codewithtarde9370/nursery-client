@@ -1,0 +1,104 @@
+/* AddPlant.css */
+
+.plant-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.plant-form h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.plant-form label {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.plant-form input,
+.plant-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.plant-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.update-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.update-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.update-btn:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+.update-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
+.home-link{
+    margin-left:600px;
+    padding: 10px;
+}
+.text {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.home-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.home-btn:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+.home-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}

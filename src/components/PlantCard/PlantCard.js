@@ -2,8 +2,9 @@ import React from 'react'
 import './PlantCard.css'
 import toast from 'react-hot-toast'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
-function PlantCard({ id, name, price, image, description, loadPlant }) {
+function PlantCard({ _id, name, price, image, description, loadPlant }) {
   const deletePlant = async (plantId) => {
     try {
       const response = await axios.delete(`${process.env.REACT_APP_API_URL}/plant/${plantId}`);
@@ -24,14 +25,14 @@ function PlantCard({ id, name, price, image, description, loadPlant }) {
           <button 
           className='delete-btn'
           onClick={() => {
-            deletePlant(id)
+            deletePlant(_id)
           }}>Delete</button> 
-          <button 
+         <Link to={`/Update/${_id}`}> <button 
           className='update-btn'
           // onClick={() => {
           //   updatePlant(id)
           // }}
-          >Update</button> 
+          >Update</button> </Link>
         </div>
     </div>
   )
